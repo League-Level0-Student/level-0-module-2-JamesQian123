@@ -27,10 +27,26 @@ public class AnimalFarm {
 
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
-		*/			 
-			
+		*/	
+		while(true) {
+		String animal = JOptionPane.showInputDialog("Which animal do you want, cow, duck, dog, cat, or llama?");
+		if(animal .equalsIgnoreCase("cow")) {
+			moo();
+		}
+		if(animal .equalsIgnoreCase("duck")) {
+			quack();
+		}
+		if(animal .equalsIgnoreCase("dog")) {
+			woof();
+		}
+		if(animal .equalsIgnoreCase("cat")) {
+			meow();
+		}
+		if(animal .equalsIgnoreCase("llama")) {
+			llamaScream();
+		}
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		}
 	}
 
 	void moo() {
